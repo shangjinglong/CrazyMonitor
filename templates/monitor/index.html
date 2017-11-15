@@ -15,7 +15,7 @@
 					<a href="index.html" class="navbar-brand">
 						<!--img src="img/logo.png" alt="Nifty Logo" class="brand-icon" -->
 						<div class="brand-title">
-							<span class="brand-text">Varys</span>
+							<span class="brand-text">CrazyMonitor</span>
 						</div>
 					</a>
 				</div>
@@ -240,13 +240,13 @@
 
 
 				<!--Breadcrumb-->
-				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {% block breadcrumb%}
 				<ol class="breadcrumb">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Library</a></li>
 					<li class="active">Data</li>
 				</ol>
-				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                {% endblock %}
 				<!--End breadcrumb-->
 
 
@@ -544,7 +544,7 @@
 										<!--Submenu-->
 										<ul class="collapse">
 											<li><a href="{% url 'hosts' %}">Hosts</a></li>
-											<li class=""><a href="#">HostGroups</a></li>
+											<li class=""><a href="{% url 'host_groups' %}">HostGroups</a></li>
 											<li><a href="#">Templates</a></li>
 											<li><a href="#">Services</a></li>
 											<li class="list-divider"></li>
